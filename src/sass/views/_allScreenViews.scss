@@ -8,6 +8,9 @@
   @title: All screen views
  */
 
+$banner-gradient-start: #4065B3;
+$banner-gradient-end: #33479E;
+
 %no-breadcrumb-icon {
 	content: none;
 	padding: 0;
@@ -18,7 +21,11 @@
 }
 
 #wb-bnr {
-	background: linear-gradient(#4065B3, #4065B3, #33479E) #33479E;
+	background: {
+		color: $banner-gradient-end;
+		image : linear-gradient($banner-gradient-start, $banner-gradient-start, $banner-gradient-end);
+	}
+	filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#{$banner-gradient-start}', endColorstr='#{$banner-gradient-end}')");
 }
 
 #wb-sttl {
