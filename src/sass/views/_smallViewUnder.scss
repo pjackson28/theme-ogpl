@@ -7,3 +7,51 @@
 /*
   @title: Small view and under (screen only)
  */
+
+#ogpl-logo {
+	position: absolute;
+	width: 158px;
+	left: 0;
+	top: -50px;
+}
+
+#wb-glb-mn {
+	padding: 0;
+
+	> ul {
+		margin: 10px 0;
+
+		a {
+			color: #FFF;
+			font-size: 1.5em;
+		}
+	}
+
+	header {
+		background-color: #33479E;
+	}
+
+	nav {
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+	}
+
+	summary {
+		&:hover, &:focus {
+			background: transparent;
+		}
+	}
+
+	.lng-ofr {
+		text-align: right;
+	}
+}
+
+#wb-sttl {
+	a {
+		font-size: 1.5em;
+		text-shadow: 0 1px 1px #044062;
+	}
+}

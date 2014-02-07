@@ -7,3 +7,74 @@
 /*
   @title: All screen views
  */
+
+%no-breadcrumb-icon {
+	content: "";
+	padding: 0;
+}
+
+#wb-bar {
+	background: #474747;
+}
+
+#wb-bnr {
+	background: linear-gradient(#4065B3, #4065B3, #33479E) #33479E;
+}
+
+#wb-sttl {
+	a {
+		color: #FFFFFF !important;
+
+		// TODO: Implement %navigation-links when libsass gets better placeholder support
+		&:link {
+			text-decoration: none;
+		}
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+#wb-bc {
+	.breadcrumb {
+		margin-bottom: 0;
+		background: transparent;
+	}
+
+	li {
+		&:before, &:after {
+			font-family: "Glyphicons Halflings";
+			font-size: 0.7em;
+			color: #333;
+		}
+		&:before {
+			content: "\e092";
+		}
+
+		&:first-child {
+			&:before {
+				@extend %no-breadcrumb-icon;
+			}
+		}
+	}
+}
+
+[dir=rtl] {
+	#wb-bc {
+		li {
+			&:before {
+				@extend %no-breadcrumb-icon;
+			}
+			&:after {
+				content: "\e091";
+				padding: 0 5px;
+			}
+			&:first-child {
+				&:after {
+					@extend %no-breadcrumb-icon;
+				}
+			}
+		}
+	}
+}
