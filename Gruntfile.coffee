@@ -46,6 +46,15 @@ module.exports = ->
 	)
 
 	@registerTask(
+		"deploy"
+		"Build and deploy artifacts to wet-boew-dist"
+		[
+			"copy:deploy"
+			"gh-pages:travis"
+		]
+	)
+
+	@registerTask(
 		"server"
 		"Run the Connect web server for local repo"
 		[
@@ -132,6 +141,13 @@ module.exports = ->
 				cwd: "src/js"
 				src: "**/*.js"
 				dest: "dist/unmin/js"
+			deploy:
+				src: [
+					"*.txt"
+					"README.md"
+				]
+				dest: "dist"
+				expand: true
 
 		sass:
 			base:
