@@ -45,6 +45,7 @@ body {
 
 #wb-bar {
 	@extend %white-bottom-border;
+	min-height: 2.25em;
 	a {
 		color: #FFF;
 	}
