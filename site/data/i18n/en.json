@@ -1,3 +1,5 @@
 {
-	"key": "Value"
+	"key": "Value",
+	"site.description": "The OGPL theme was developed to support the Open Government Platform (OGPL).",
+	"site.title": "Open Government Platform (OGPL)"
 }
