@@ -67,6 +67,10 @@ $banner-gradient-end: #33479E;
 	}
 }
 
+#wb-dtmd {
+	float: right;
+}
+
 [dir=rtl] {
 	#wb-bc {
 		li {
@@ -83,5 +87,9 @@ $banner-gradient-end: #33479E;
 				}
 			}
 		}
+	}
+
+	#wb-dtmd {
+		float: left;
 	}
 }
