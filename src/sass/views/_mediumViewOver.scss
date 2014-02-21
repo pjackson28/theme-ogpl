@@ -102,6 +102,24 @@ body {
 #wb-srch {
 	margin-top: 1.2em;
 	text-align: right;
+	padding-right: 10px;
+	.form-group {
+		width: 70%;
+	}
+}
+
+#wb-srch, .srch-pnl {
+	.form-control {
+		width: 100%;
+	}
+}
+
+[lang=fr] {
+	#wb-srch {
+		.form-group {
+			width: 60%;
+		}
+	}
 }
 
 #wb-sm {
@@ -218,4 +236,10 @@ body {
 footer {
 	background: #CCC;
 	border-top: 1px solid #BBBBBB;
+}
+
+[dir=rtl] {
+	#wb-srch {
+		text-align: left;
+	}
 }
