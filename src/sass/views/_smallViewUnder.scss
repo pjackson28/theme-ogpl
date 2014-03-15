@@ -38,6 +38,15 @@
 	}
 }
 
+%ogpl-theme-site-menu-mb-pnl-padding-10-20 {
+	padding: 10px 20px;
+}
+%small-view-background-efefef {
+	background: #efefef;
+}
+%small-view-under-color-fff {
+	color: #fff;
+}
 #mb-pnl {	
 	header {
 		background-color: #33479E;
@@ -61,12 +70,6 @@
 		padding: 0;
 	}
 
-	%ogpl-theme-site-menu-mb-pnl-padding-10-20 {
-		padding: 10px 20px;
-	}
-	%small-view-background-efefef {
-		background: #efefef;
-	}
 	.srch-pnl {
 		@extend %ogpl-theme-site-menu-mb-pnl-padding-10-20;
 		@extend %small-view-background-efefef;
@@ -77,9 +80,6 @@
 		}
 	}
 
-	%small-view-under-color-fff {
-		color: #fff;
-	}
 	#wb-srch-sub-imprt {
 		background: #33479E;
 		border-color: #33479E;
