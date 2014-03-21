@@ -38,9 +38,6 @@
 	}
 }
 
-%ogpl-theme-site-menu-mb-pnl-padding-10-20 {
-	padding: 10px 20px;
-}
 %small-view-background-efefef {
 	background: #efefef;
 }
@@ -73,7 +70,6 @@ $ogpl-theme-mb-pnl-bg: #ccc;
 	}
 
 	.srch-pnl {
-		@extend %ogpl-theme-site-menu-mb-pnl-padding-10-20;
 		@extend %small-view-background-efefef;
 		.form-group {
 			float: left;
@@ -94,8 +90,6 @@ $ogpl-theme-mb-pnl-bg: #ccc;
 	}
 
 	.lng-ofr {
-		@extend %ogpl-theme-site-menu-mb-pnl-padding-10-20;
-		text-align: right;
 		@extend %small-view-background-efefef;
 		a {
 			color: #000;
@@ -105,13 +99,11 @@ $ogpl-theme-mb-pnl-bg: #ccc;
 
 	.sec-pnl {
 		@extend %small-view-under-bg-color-fff;
-		@extend %ogpl-theme-site-menu-mb-pnl-padding-10-20;
 		@extend %small-view-background-efefef;
 	}
 
 	.sm-pnl {
 		background: #202a33;
-		@extend %ogpl-theme-site-menu-mb-pnl-padding-10-20;
 		a {
 			@extend %small-view-under-color-fff;
 		}
@@ -121,10 +113,6 @@ $ogpl-theme-mb-pnl-bg: #ccc;
 				@extend %small-view-under-color-fff;
 			}
 		}
-	}
-
-	.info-pnl {
-		@extend %ogpl-theme-site-menu-mb-pnl-padding-10-20;
 	}
 }
 
@@ -146,17 +134,16 @@ $ogpl-theme-mb-pnl-bg: #ccc;
 
 [dir=rtl] {
 	#mb-pnl {
-		.lng-ofr {
-			text-align: left;
-			ul {
-				margin-left: 0;
-			}
-			li {
-				padding-left: 0;
-				padding-right: 10px;
+		.srch-pnl {
+			.form-group {
+				float: right;
+				margin-right: auto;
+				margin-left: 5px;
+				width: 75%;
 			}
 		}
 	}
+
 	#wb-glb-mn {
 		> {
 			ul {
