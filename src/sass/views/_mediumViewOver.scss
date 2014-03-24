@@ -122,6 +122,10 @@ body {
 	}
 }
 
+%ogpl-theme-wb-sm-wb-navcurr {
+	background: #3853A6;
+	color: #fff;
+}
 #wb-sm {
 	background: #202A33;
 
@@ -132,6 +136,13 @@ body {
 				li {
 					padding: 0;
 					border-right: 1px solid #999;
+					> {
+						a {
+							&.wb-navcurr {
+								@extend %ogpl-theme-wb-sm-wb-navcurr;
+							}
+						}
+					}
 					&:last-child {
 						border-left: 1px solid #999;
 					}
@@ -170,7 +181,9 @@ body {
 			&:link {
 				text-decoration: none;
 			}
-
+			&.wb-navcurr {
+				@extend %ogpl-theme-wb-sm-wb-navcurr;
+			}
 			&:hover, &:focus {
 				text-decoration: underline;
 			}
