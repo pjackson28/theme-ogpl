@@ -71,6 +71,12 @@ $banner-gradient-end: #33479E;
 	float: right;
 }
 
+#wb-info {
+	li {
+		margin-bottom: 0.75em;
+	}
+}
+
 [dir=rtl] {
 	#wb-bc {
 		li {
