@@ -9,18 +9,10 @@
  */
 #wb-glb-mn {
 	padding: 0;
-
-	> ul {
-		margin: 10px 0;
-		a {
-			color: #FFF;
-			font-size: 1.5em;
-		}
-	}
 	.pnl-btn {
 		position: relative;
 		z-index: 2;
-		margin: 0;
+		margin: 10px 0;
 		float: right;
 		li {
 			padding: 4px 10px 0;
