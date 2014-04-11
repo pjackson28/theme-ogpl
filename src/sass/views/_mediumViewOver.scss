@@ -46,6 +46,7 @@ body {
 #wb-bar {
 	@extend %white-bottom-border;
 	min-height: 2.25em;
+
 	a {
 		color: #FFF;
 	}
@@ -90,6 +91,7 @@ body {
 		font-size: 1.8em;
     	text-shadow: 1px 1px 1px #333333;
 		display: table-row;
+
 		span {
 			display: table-cell;
 			vertical-align: middle;
@@ -103,12 +105,14 @@ body {
 	margin-top: 1.2em;
 	text-align: right;
 	padding-right: 10px;
+
 	.form-group {
 		width: 70%;
 	}
 }
 
 #wb-srch, .srch-pnl {
+
 	.form-control {
 		width: 100%;
 	}
@@ -136,6 +140,7 @@ body {
 				li {
 					padding: 0;
 					border-right: 1px solid #999;
+
 					> {
 						a {
 							&.wb-navcurr {
@@ -143,9 +148,11 @@ body {
 							}
 						}
 					}
+
 					&:last-child {
 						border-left: 1px solid #999;
 					}
+
 					&.active {
 						border-color: #CCC;
 					}
@@ -188,6 +195,7 @@ body {
 				text-decoration: underline;
 			}
 		}
+
 		.slflnk {
 			background: #bbb;
 		}
@@ -219,20 +227,22 @@ body {
 #wb-sec {
 	margin-top: 20px;
 	padding-bottom: 2em;
+
 	h3 {
 		padding: 15px;
 		margin: 0;
 		border: 1px solid #ddd;
 		border-bottom: 3px solid #666;
-		line-height: 0.8;
+		font-size: 1em;
+
 		a {
 			color: #333;
-			font-size: 0.7em;
 			text-decoration: none;
 		}
 	}
 	.list-group {
 		margin-bottom: 0;
+
 		a {
 			&.list-group-item {
 				background: $clrWhite;
@@ -250,6 +260,7 @@ body {
 				}
 			}
 		}
+
 		.list-group {
 			.list-group-item {
 				background: darken($clrWhite, 10%);
