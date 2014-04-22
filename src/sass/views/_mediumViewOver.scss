@@ -146,6 +146,15 @@ body {
 							&.wb-navcurr {
 								@extend %ogpl-theme-wb-sm-wb-navcurr;
 							}
+
+							// :focus not needed since already covered by the &.active state
+							&:hover {
+								@extend %submenu-colors;
+
+								.expicon {
+									border-top-color: #000;
+								}
+							}
 						}
 					}
 
