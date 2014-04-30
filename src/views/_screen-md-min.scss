@@ -21,20 +21,6 @@
 	border-bottom: 1px solid #FFF;
 }
 
-// TODO: Implement when libsass gets better placeholder support
-// %navigation-links {
-//	a {
-//		&:link {
-//			text-decoration: none;
-//		}
-//
-//		&:hover, &:focus {
-//			text-decoration: underline;
-//		}
-//	}
-//}
-//
-
 body {
 	background: #EEE;
 }
@@ -69,7 +55,7 @@ body {
 		color: #fff;
 		text-decoration: none;
 	}
-		
+
 	.curr {
 		display: block;
 		color: #ccc;
@@ -79,7 +65,7 @@ body {
 		}
 	}
 
-	
+
 }
 
 #wb-bnr {
@@ -171,7 +157,7 @@ body {
 			@extend %submenu-colors;
 		}
 	}
-	
+
 	a, summary {
 		display: block;
 		color: #FFF;
