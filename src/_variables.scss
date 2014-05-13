@@ -10,3 +10,17 @@
 $banner-gradient-start: #4065B3;
 $banner-gradient-end: #33479E;
 $ogpl-theme-mb-pnl-bg: #ccc;
+
+@mixin navigation-links {
+	a {
+		&:link,
+		&:visited {
+			text-decoration: none;
+		}
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+}

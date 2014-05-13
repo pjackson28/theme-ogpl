@@ -8,6 +8,10 @@
   @title: Medium view and over (screen only)
  */
 
+%medium-view-navigation-links {
+	@include navigation-links;
+}
+
 %page-background {
 	background-color:#FFF;
 }
@@ -153,12 +157,14 @@ body {
 	}
 
 	.active {
-		a, summary {
+		a,
+		summary {
 			@extend %submenu-colors;
 		}
 	}
 
-	a, summary {
+	a,
+	summary {
 		display: block;
 		color: #FFF;
 		font-weight: 700;
@@ -171,19 +177,14 @@ body {
 		border-bottom: 4px solid #0F315B;
 		border-radius: 0 0 3px 3px;
 
-		a, summary {
+		a,
+		summary {
+			@extend %medium-view-navigation-links;
 			@extend %submenu-colors;
 			font-weight: 400;
 
-			// TODO: Implement %navigation-links when libsass gets better placeholder support
-			&:link {
-				text-decoration: none;
-			}
 			&.wb-navcurr {
 				@extend %ogpl-theme-wb-sm-wb-navcurr;
-			}
-			&:hover, &:focus {
-				text-decoration: underline;
 			}
 		}
 
