@@ -189,7 +189,9 @@ body {
 		}
 
 		.slflnk {
-			background: #bbb;
+			a {
+				background: #bbb;
+			}
 		}
 	}
 }
