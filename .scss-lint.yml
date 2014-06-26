@@ -38,5 +38,3 @@ linters:
     enabled: false
   TrailingSemicolonAfterPropertyValue:
     enabled: false
-  DeclarationOrder:
-    enabled: false

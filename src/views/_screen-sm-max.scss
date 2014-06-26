@@ -71,13 +71,14 @@
 	}
 
 	#wb-srch-sub-imprt {
+		@extend %small-view-under-color-fff;
 		background: #33479e;
 		border-color: #33479e;
-		@extend %small-view-under-color-fff;
+
 		&:hover, &:focus, &:active {
+			@extend %small-view-under-color-fff;
 			background-color: #5367be;
 			border-color: #5367be;
-			@extend %small-view-under-color-fff;
 		}
 	}
 
