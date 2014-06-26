@@ -13,20 +13,34 @@
 }
 
 %page-background {
-	background-color:#FFF;
+	background-color: #fff;
 }
 
 %submenu-colors {
-	background-color: #CCC;
+	background-color: #ccc;
 	color: #000;
 }
 
 %white-bottom-border {
-	border-bottom: 1px solid #FFF;
+	border-bottom: 1px solid #fff;
 }
 
 body {
-	background: #EEE;
+	background: #eee;
+
+	> {
+		main {
+			@extend %page-background;
+		}
+
+		header {
+			+ {
+				.container {
+					@extend %page-background;
+				}
+			}
+		}
+	}
 }
 
 #ogpl-logo {
@@ -38,7 +52,7 @@ body {
 	min-height: 2.25em;
 
 	a {
-		color: #FFF;
+		color: #fff;
 	}
 }
 
@@ -48,28 +62,29 @@ body {
 
 	li {
 		border-left: 1px solid #777;
-		list-style-type: none;
 		float: left;
+		list-style-type: none;
 		padding: 6px 15px;
+
 		&:first-child {
-			border-left: none;
+			border-left: 0;
 		}
 	}
+
 	a {
 		color: #fff;
 		text-decoration: none;
 	}
 
 	.curr {
-		display: block;
+		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAB90RVh0U29mdHdhcmUATWFjcm9tZWRpYSBGaXJld29ya3MgOLVo0ngAAAA6SURBVAiZY/z//z8DMvj14+s+BgYGBjYObicUif///8Pxz+9f9v2HAigbLodVETbFOBWhK8arCFkxABifl5syjffvAAAAAElFTkSuQmCC") no-repeat scroll center bottom;
 		color: #ccc;
-		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAB90RVh0U29mdHdhcmUATWFjcm9tZWRpYSBGaXJld29ya3MgOLVo0ngAAAA6SURBVAiZY/z//z8DMvj14+s+BgYGBjYObicUif///8Pxz+9f9v2HAigbLodVETbFOBWhK8arCFkxABifl5syjffvAAAAAElFTkSuQmCC) no-repeat scroll center bottom;
+		display: block;
+
 		span {
 			@extend %accessible-invisible;
 		}
 	}
-
-
 }
 
 #wb-bnr {
@@ -78,31 +93,31 @@ body {
 
 #wb-sttl {
 	a {
-		font-size: 1.8em;
-    	text-shadow: 1px 1px 1px #333333;
 		display: table-row;
+		font-size: 1.8em;
+		text-shadow: 1px 1px 1px #333;
 
 		span {
 			display: table-cell;
-			vertical-align: middle;
 			line-height: normal;
 			padding-left: 10px;
+			vertical-align: middle;
 		}
 	}
 }
 
 #wb-srch {
 	margin-top: 1.2em;
-	text-align: right;
 	padding-right: 10px;
+	text-align: right;
 
 	.form-group {
 		width: 70%;
 	}
 }
 
-#wb-srch, .srch-pnl {
-
+#wb-srch,
+.srch-pnl {
 	.form-control {
 		width: 100%;
 	}
@@ -117,19 +132,21 @@ body {
 }
 
 %ogpl-theme-wb-sm-wb-navcurr {
-	background: #3853A6;
+	background: #3853a6;
 	color: #fff;
 }
+
 #wb-sm {
-	background: #202A33;
+	background: #202a33;
 
 	ul {
 		&.menu {
 			margin-bottom: 0;
+
 			> {
 				li {
-					padding: 0;
 					border-right: 1px solid #999;
+					padding: 0;
 
 					> {
 						a {
@@ -149,7 +166,7 @@ body {
 					}
 
 					&.active {
-						border-color: #CCC;
+						border-color: #ccc;
 					}
 				}
 			}
@@ -165,8 +182,8 @@ body {
 
 	a,
 	summary {
+		color: #fff;
 		display: block;
-		color: #FFF;
 		font-weight: 700;
 		padding: 0.48em 0.79em;
 		text-decoration: none;
@@ -174,7 +191,7 @@ body {
 
 	.sm {
 		@extend %submenu-colors;
-		border-bottom: 4px solid #0F315B;
+		border-bottom: 4px solid #0f315b;
 		border-radius: 0 0 3px 3px;
 
 		a,
@@ -202,53 +219,46 @@ body {
 	}
 }
 
-body {
-	> {
-		main {
-			@extend %page-background;
-		}
-
-		header + .container {
-			@extend %page-background;
-		}
-	}
-}
-
 %secmenu-ogpl-theme-menuitem-curr-hover-focus {
 	background: darken($clrWhite, 50%);
 	color: lighten($clrDark, 75%);
 }
+
 #wb-sec {
 	margin-top: 20px;
 	padding-bottom: 2em;
 
 	h3 {
-		padding: 15px;
-		margin: 0;
 		border: 1px solid #ddd;
 		border-bottom: 3px solid #666;
 		font-size: 1em;
+		margin: 0;
+		padding: 15px;
 
 		a {
 			color: #333;
 			text-decoration: none;
 		}
 	}
+
 	.list-group {
 		margin-bottom: 0;
 
 		a {
 			&.list-group-item {
 				background: $clrWhite;
-				color: $clrDark;
 				border-radius: 0;
+				color: $clrDark;
 				margin-top: -1px;
 				text-decoration: none;
+
 				&.wb-navcurr {
 					@extend %secmenu-ogpl-theme-menuitem-curr-hover-focus;
 				}
+
 				&[href] {
-					&:hover, &:focus {
+					&:hover,
+					&:focus {
 						@extend %secmenu-ogpl-theme-menuitem-curr-hover-focus;
 					}
 				}

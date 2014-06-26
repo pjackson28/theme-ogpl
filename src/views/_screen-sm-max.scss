@@ -10,21 +10,24 @@
 
 #wb-glb-mn {
 	padding: 0;
+
 	.pnl-btn {
+		float: right;
+		margin: 10px 0;
 		position: relative;
 		z-index: 2;
-		margin: 10px 0;
-		float: right;
+
 		li {
 			padding: 4px 10px 0;
 			width: 100%;
 		}
+
 		a {
-			font-size: 1.5em;
-			display: block;
-			width: 100%;
 			color: #474747;
+			display: block;
+			font-size: 1.5em;
 			line-height: 1em;
+			width: 100%;
 		}
 	}
 }
@@ -39,8 +42,9 @@
 
 #mb-pnl {
 	background: $ogpl-theme-mb-pnl-bg;
+
 	header {
-		background-color: #33479E;
+		background-color: #33479e;
 	}
 
 	nav {
@@ -51,7 +55,8 @@
 	}
 
 	summary {
-		&:hover, &:focus {
+		&:hover,
+		&:focus {
 			background: transparent;
 		}
 	}
@@ -63,6 +68,7 @@
 
 	.srch-pnl {
 		@extend %small-view-background-efefef;
+
 		.form-group {
 			float: left;
 			margin-right: 5px;
@@ -71,18 +77,22 @@
 	}
 
 	#wb-srch-sub-imprt {
-		background: #33479E;
-		border-color: #33479E;
 		@extend %small-view-under-color-fff;
-		&:hover, &:focus, &:active {
-			background-color: #5367BE;
-			border-color: #5367BE;
+		background: #33479e;
+		border-color: #33479e;
+
+		&:hover,
+		&:focus,
+		&:active {
 			@extend %small-view-under-color-fff;
+			background-color: #5367be;
+			border-color: #5367be;
 		}
 	}
 
 	.lng-ofr {
 		@extend %small-view-background-efefef;
+
 		a {
 			color: #000;
 			text-decoration: none;
@@ -96,12 +106,16 @@
 
 	.sm-pnl {
 		background: #202a33;
+
 		a {
 			@extend %small-view-under-color-fff;
 		}
+
 		summary {
 			@extend %small-view-under-color-fff;
-			&:hover, &:focus {
+
+			&:hover,
+			&:focus {
 				@extend %small-view-under-color-fff;
 			}
 		}
@@ -110,16 +124,18 @@
 
 #wb-sttl {
 	a {
-		position: relative;
-		z-index: 1;
-		padding-top: 1.125em;
 		font-size: 1.5em;
+		padding-top: 1.125em;
+		position: relative;
 		text-shadow: 0 1px 1px #044062;
+		z-index: 1;
 	}
-	object, img {
+
+	object,
+	img {
+		margin: 0;
 		position: absolute;
 		top: -27px;
-		margin: 0;
 		width: 158px;
 	}
 }
@@ -129,8 +145,8 @@
 		.srch-pnl {
 			.form-group {
 				float: right;
-				margin-right: auto;
 				margin-left: 5px;
+				margin-right: auto;
 				width: 75%;
 			}
 		}
@@ -142,6 +158,7 @@
 				text-align: left;
 			}
 		}
+
 		.pnl-btn {
 			float: left;
 		}
