@@ -52,7 +52,7 @@ body {
 		float: left;
 		padding: 6px 15px;
 		&:first-child {
-			border-left: none;
+			border-left: 0;
 		}
 	}
 	a {
