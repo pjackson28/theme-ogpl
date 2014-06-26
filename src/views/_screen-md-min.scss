@@ -27,6 +27,20 @@
 
 body {
 	background: #eee;
+
+	> {
+		main {
+			@extend %page-background;
+		}
+
+		header {
+			+ {
+				.container {
+					@extend %page-background;
+				}
+			}
+		}
+	}
 }
 
 #ogpl-logo {
@@ -199,18 +213,6 @@ body {
 #wb-bc {
 	.container {
 		@extend %page-background;
-	}
-}
-
-body {
-	> {
-		main {
-			@extend %page-background;
-		}
-
-		header + .container {
-			@extend %page-background;
-		}
 	}
 }
 
