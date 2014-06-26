@@ -40,7 +40,7 @@
 #mb-pnl {
 	background: $ogpl-theme-mb-pnl-bg;
 	header {
-		background-color: #33479E;
+		background-color: #33479e;
 	}
 
 	nav {
@@ -71,12 +71,12 @@
 	}
 
 	#wb-srch-sub-imprt {
-		background: #33479E;
-		border-color: #33479E;
+		background: #33479e;
+		border-color: #33479e;
 		@extend %small-view-under-color-fff;
 		&:hover, &:focus, &:active {
-			background-color: #5367BE;
-			border-color: #5367BE;
+			background-color: #5367be;
+			border-color: #5367be;
 			@extend %small-view-under-color-fff;
 		}
 	}

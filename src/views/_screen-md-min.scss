@@ -13,20 +13,20 @@
 }
 
 %page-background {
-	background-color:#FFF;
+	background-color:#fff;
 }
 
 %submenu-colors {
-	background-color: #CCC;
+	background-color: #ccc;
 	color: #000;
 }
 
 %white-bottom-border {
-	border-bottom: 1px solid #FFF;
+	border-bottom: 1px solid #fff;
 }
 
 body {
-	background: #EEE;
+	background: #eee;
 }
 
 #ogpl-logo {
@@ -38,7 +38,7 @@ body {
 	min-height: 2.25em;
 
 	a {
-		color: #FFF;
+		color: #fff;
 	}
 }
 
@@ -79,7 +79,7 @@ body {
 #wb-sttl {
 	a {
 		font-size: 1.8em;
-		text-shadow: 1px 1px 1px #333333;
+		text-shadow: 1px 1px 1px #333;
 		display: table-row;
 
 		span {
@@ -117,11 +117,11 @@ body {
 }
 
 %ogpl-theme-wb-sm-wb-navcurr {
-	background: #3853A6;
+	background: #3853a6;
 	color: #fff;
 }
 #wb-sm {
-	background: #202A33;
+	background: #202a33;
 
 	ul {
 		&.menu {
@@ -149,7 +149,7 @@ body {
 					}
 
 					&.active {
-						border-color: #CCC;
+						border-color: #ccc;
 					}
 				}
 			}
@@ -166,7 +166,7 @@ body {
 	a,
 	summary {
 		display: block;
-		color: #FFF;
+		color: #fff;
 		font-weight: 700;
 		padding: 0.48em 0.79em;
 		text-decoration: none;
@@ -174,7 +174,7 @@ body {
 
 	.sm {
 		@extend %submenu-colors;
-		border-bottom: 4px solid #0F315B;
+		border-bottom: 4px solid #0f315b;
 		border-radius: 0 0 3px 3px;
 
 		a,
