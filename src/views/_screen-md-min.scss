@@ -115,8 +115,8 @@ body {
 	}
 }
 
-#wb-srch, .srch-pnl {
-
+#wb-srch,
+.srch-pnl {
 	.form-control {
 		width: 100%;
 	}
@@ -250,7 +250,8 @@ body {
 					@extend %secmenu-ogpl-theme-menuitem-curr-hover-focus;
 				}
 				&[href] {
-					&:hover, &:focus {
+					&:hover,
+					&:focus {
 						@extend %secmenu-ogpl-theme-menuitem-curr-hover-focus;
 					}
 				}

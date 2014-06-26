@@ -51,7 +51,8 @@
 	}
 
 	summary {
-		&:hover, &:focus {
+		&:hover,
+		&:focus {
 			background: transparent;
 		}
 	}
@@ -75,7 +76,9 @@
 		background: #33479e;
 		border-color: #33479e;
 
-		&:hover, &:focus, &:active {
+		&:hover,
+		&:focus,
+		&:active {
 			@extend %small-view-under-color-fff;
 			background-color: #5367be;
 			border-color: #5367be;
@@ -102,7 +105,8 @@
 		}
 		summary {
 			@extend %small-view-under-color-fff;
-			&:hover, &:focus {
+			&:hover,
+			&:focus {
 				@extend %small-view-under-color-fff;
 			}
 		}
@@ -117,7 +121,8 @@
 		font-size: 1.5em;
 		text-shadow: 0 1px 1px #044062;
 	}
-	object, img {
+	object,
+	img {
 		position: absolute;
 		top: -27px;
 		margin: 0;
