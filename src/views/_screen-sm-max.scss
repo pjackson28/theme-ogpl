@@ -11,20 +11,20 @@
 #wb-glb-mn {
 	padding: 0;
 	.pnl-btn {
+		float: right;
+		margin: 10px 0;
 		position: relative;
 		z-index: 2;
-		margin: 10px 0;
-		float: right;
 		li {
 			padding: 4px 10px 0;
 			width: 100%;
 		}
 		a {
-			font-size: 1.5em;
-			display: block;
-			width: 100%;
 			color: #474747;
+			display: block;
+			font-size: 1.5em;
 			line-height: 1em;
+			width: 100%;
 		}
 	}
 }
@@ -115,17 +115,17 @@
 
 #wb-sttl {
 	a {
-		position: relative;
-		z-index: 1;
-		padding-top: 1.125em;
 		font-size: 1.5em;
+		padding-top: 1.125em;
+		position: relative;
 		text-shadow: 0 1px 1px #044062;
+		z-index: 1;
 	}
 	object,
 	img {
+		margin: 0;
 		position: absolute;
 		top: -27px;
-		margin: 0;
 		width: 158px;
 	}
 }
@@ -135,8 +135,8 @@
 		.srch-pnl {
 			.form-group {
 				float: right;
-				margin-right: auto;
 				margin-left: 5px;
+				margin-right: auto;
 				width: 75%;
 			}
 		}
