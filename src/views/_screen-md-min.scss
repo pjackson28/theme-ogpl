@@ -65,10 +65,12 @@ body {
 		float: left;
 		list-style-type: none;
 		padding: 6px 15px;
+
 		&:first-child {
 			border-left: 0;
 		}
 	}
+
 	a {
 		color: #fff;
 		text-decoration: none;
@@ -78,12 +80,11 @@ body {
 		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAB90RVh0U29mdHdhcmUATWFjcm9tZWRpYSBGaXJld29ya3MgOLVo0ngAAAA6SURBVAiZY/z//z8DMvj14+s+BgYGBjYObicUif///8Pxz+9f9v2HAigbLodVETbFOBWhK8arCFkxABifl5syjffvAAAAAElFTkSuQmCC") no-repeat scroll center bottom;
 		color: #ccc;
 		display: block;
+
 		span {
 			@extend %accessible-invisible;
 		}
 	}
-
-
 }
 
 #wb-bnr {
@@ -134,12 +135,14 @@ body {
 	background: #3853a6;
 	color: #fff;
 }
+
 #wb-sm {
 	background: #202a33;
 
 	ul {
 		&.menu {
 			margin-bottom: 0;
+
 			> {
 				li {
 					border-right: 1px solid #999;
@@ -220,6 +223,7 @@ body {
 	background: darken($clrWhite, 50%);
 	color: lighten($clrDark, 75%);
 }
+
 #wb-sec {
 	margin-top: 20px;
 	padding-bottom: 2em;
@@ -236,6 +240,7 @@ body {
 			text-decoration: none;
 		}
 	}
+
 	.list-group {
 		margin-bottom: 0;
 
@@ -246,9 +251,11 @@ body {
 				color: $clrDark;
 				margin-top: -1px;
 				text-decoration: none;
+
 				&.wb-navcurr {
 					@extend %secmenu-ogpl-theme-menuitem-curr-hover-focus;
 				}
+
 				&[href] {
 					&:hover,
 					&:focus {
