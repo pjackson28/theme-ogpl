@@ -25,7 +25,7 @@
 		color: $banner-gradient-end;
 		image : linear-gradient($banner-gradient-start, $banner-gradient-start, $banner-gradient-end);
 	}
-	filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#{$banner-gradient-start}', endColorstr='#{$banner-gradient-end}')");
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr="#{ie-hex-str($banner-gradient-start)}", endColorstr="#{ie-hex-str($banner-gradient-end)}");
 }
 
 #wb-sttl {
