@@ -1,4 +1,13 @@
 {
 	"site-description": "Un thème qui met en place la mise en page et la mise en forme pour la Plate-forme de gouvernement ouvert (PGO).",
-	"site-title": "Plate-forme de gouvernement ouvert (PGO)"
+	"site-title": "Plate-forme de gouvernement ouvert (PGO)",
+	"site-about": "À propos de la PGO",
+	"site-governance": "Gouvernance de la PGO sur Github",
+	"site-licenses": "Licences",
+	"site-contact-form": "Formulaire contactez-nous (ogpl.gov.in)",
+	"best-practices": "Pratiques exemplaires",
+	"contributions": "Contributions",
+	"open-data": "Données ouvertes",
+	"partners": "Partenaires",
+	"tools": "Outils"
 }

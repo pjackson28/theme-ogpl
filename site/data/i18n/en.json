@@ -1,4 +1,13 @@
 {
 	"site-description": "The OGPL theme was developed to support the Open Government Platform (OGPL).",
-	"site-title": "Open Government Platform (OGPL)"
+	"site-title": "Open Government Platform (OGPL)",
+	"site-about": "About OGPL",
+	"site-governance": "OGPL Governance on Github",
+	"site-licenses": "Licenses",
+	"site-contact-form": "Contact Us form (ogpl.gov.in)",
+	"best-practices": "Best Practices",
+	"contributions": "Contributions",
+	"open-data": "Open Data",
+	"partners": "Partners",
+	"tools": "Tools"
 }
