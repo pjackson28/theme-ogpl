@@ -48,7 +48,6 @@ module.exports = (grunt) ->
 		"Produces unminified files"
 		[
 			"clean:dist"
-			"i18n_csv"
 			"copy:wetboew"
 			"assets"
 			"css"
@@ -118,6 +117,11 @@ module.exports = (grunt) ->
 		jqueryOldIEVersion: grunt.file.readJSON("lib/jquery-oldIE/bower.json")
 		banner: "/*!\n * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)\n * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html\n" +
 				" * v<%= pkg.version %> - " + "<%= grunt.template.today('yyyy-mm-dd') %>\n *\n */"
+		locales: grunt.file.expand(
+			cwd: "site/data/i18n"
+			, "*.json").map((src) ->
+				src.replace ".json", ""
+		)
 
 		checkDependencies:
 			all:
@@ -222,13 +226,6 @@ module.exports = (grunt) ->
 				dest: "dist/js/"
 				ext: ".min.js"
 
-		i18n_csv:
-			list_locales:
-				options:
-					csv: "lib/wet-boew/src/i18n/i18n.csv"
-					startCol: 1
-					listOnly: true
-
 		assemble:
 			options:
 				prettify:
@@ -260,7 +257,7 @@ module.exports = (grunt) ->
 					flatten: true,
 					plugins: ["assemble-contrib-i18n"]
 					i18n:
-						languages: "<%= i18n_csv.list_locales.locales %>"
+						languages: "<%= locales %>"
 						templates: [
 							"site/pages/*.hbs"
 							"!site/pages/splashpage*.hbs"
@@ -321,7 +318,7 @@ module.exports = (grunt) ->
 					flatten: true,
 					plugins: ["assemble-contrib-i18n"]
 					i18n:
-						languages: "<%= i18n_csv.list_locales.locales %>"
+						languages: "<%= locales %>"
 						templates: [
 							"site/pages/*.hbs"
 							"!site/pages/splashpage*.hbs"
@@ -441,7 +438,6 @@ module.exports = (grunt) ->
 	@loadNpmTasks "grunt-gh-pages"
 	@loadNpmTasks "grunt-htmlcompressor"
 	@loadNpmTasks "grunt-hub"
-	@loadNpmTasks "grunt-i18n-csv"
 	@loadNpmTasks "grunt-sass"
 
 	@
