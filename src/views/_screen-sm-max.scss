@@ -9,25 +9,30 @@
  */
 
 #wb-glb-mn {
-	padding: 0;
-
 	.pnl-btn {
 		float: right;
-		margin: 10px 0;
+		margin: 0;
 		position: relative;
 		z-index: 2;
 
 		li {
-			padding: 4px 10px 0;
+			padding: 4px 0 4px 10px;
 			width: 100%;
 		}
 
 		a {
 			color: #474747;
 			display: block;
-			font-size: 1.5em;
+			font-size: 1.9em;
 			line-height: 1em;
 			width: 100%;
+		}
+
+		span {
+			.glyphicon-th-list {
+				padding-left: 10px;
+				top: 0;
+			}
 		}
 	}
 }
@@ -125,7 +130,7 @@
 #wb-sttl {
 	a {
 		font-size: 1.5em;
-		padding-top: 1.125em;
+		padding-top: 1.65em;
 		position: relative;
 		text-shadow: 0 1px 1px #044062;
 		z-index: 1;
@@ -135,8 +140,8 @@
 	img {
 		margin: 0;
 		position: absolute;
-		top: -27px;
-		width: 158px;
+		top: -6px;
+		width: 5.5em;
 	}
 }
 
@@ -161,6 +166,13 @@
 
 		.pnl-btn {
 			float: left;
+
+			span {
+				.glyphicon-th-list {
+					padding-left: 0;
+					padding-right: 10px;
+				}
+			}
 		}
 	}
 }

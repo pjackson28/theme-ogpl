@@ -16,6 +16,17 @@
 	padding: 0;
 }
 
+.wb-sl {
+	background: #000;
+	color: #fff;
+	font-weight: 700;
+
+	&:focus {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
 #wb-bar {
 	background: #474747;
 }
