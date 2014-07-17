@@ -28,11 +28,11 @@
 body {
 	background: #eee;
 
-	> {
-		main {
-			@extend %page-background;
-		}
+	main {
+		@extend %page-background;
+	}
 
+	> {
 		header {
 			+ {
 				.container {
