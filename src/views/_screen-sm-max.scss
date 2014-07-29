@@ -7,6 +7,9 @@
 /*
   @title: Small view and under (screen only)
  */
+#wb-bar {
+	min-height: 3em;
+}
 
 #wb-glb-mn {
 	.pnl-btn {
@@ -145,7 +148,32 @@
 	}
 }
 
+#wb-srch {
+	margin-right: 15px;
+	text-align: right;
+
+	.form-group {
+		display: inline-block;
+	}
+}
+
+#wb-srch-sub {
+	float: right;
+	margin-left: 5px;
+}
+
 [dir=rtl] {
+	#wb-srch {
+		margin-left: 15px;
+		text-align: left;
+	}
+
+	#wb-srch-sub {
+		float: right;
+		margin-left: 5px;
+		margin-right: 0;
+	}
+
 	#mb-pnl {
 		.srch-pnl {
 			.form-group {

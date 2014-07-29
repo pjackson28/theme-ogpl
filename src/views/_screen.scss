@@ -47,6 +47,97 @@
 	}
 }
 
+%submenu-colors {
+	background-color: #ccc;
+	color: #000;
+}
+
+%ogpl-theme-wb-sm-wb-navcurr {
+	background: #3853a6;
+	color: #fff;
+}
+
+%all-views-navigation-links {
+	@include navigation-links;
+}
+
+#wb-sm {
+	background: #202a33;
+
+	ul {
+		&.menu {
+			margin-bottom: 0;
+
+			> {
+				li {
+					border-right: 1px solid #999;
+					padding: 0;
+
+					> {
+						a {
+							&.wb-navcurr {
+								@extend %ogpl-theme-wb-sm-wb-navcurr;
+							}
+
+							// :focus not needed since already covered by the &.active state
+							&:hover {
+								@extend %submenu-colors;
+							}
+						}
+					}
+
+					&:last-child {
+						border-left: 1px solid #999;
+					}
+
+					&.active {
+						border-color: #ccc;
+					}
+				}
+			}
+		}
+	}
+
+	.active {
+		a,
+		summary {
+			@extend %submenu-colors;
+		}
+	}
+
+	a,
+	summary {
+		color: #fff;
+		display: block;
+		font-weight: 700;
+		padding: 0.48em 0.79em;
+		text-decoration: none;
+	}
+
+	.sm {
+		@extend %submenu-colors;
+		border-bottom: 4px solid #0f315b;
+		border-radius: 0 0 3px 3px;
+
+		a,
+		summary {
+			@extend %all-views-navigation-links;
+			@extend %submenu-colors;
+			font-weight: 400;
+
+			&.wb-navcurr {
+				@extend %ogpl-theme-wb-sm-wb-navcurr;
+			}
+		}
+
+		.slflnk {
+			a {
+				background: #bbb;
+			}
+		}
+	}
+}
+
 #wb-bc {
 	.breadcrumb {
 		background: transparent;

@@ -16,11 +16,6 @@
 	background-color: #fff;
 }
 
-%submenu-colors {
-	background-color: #ccc;
-	color: #000;
-}
-
 %white-bottom-border {
 	border-bottom: 1px solid #fff;
 }
@@ -127,88 +122,6 @@ body {
 	#wb-srch {
 		.form-group {
 			width: 60%;
-		}
-	}
-}
-
-%ogpl-theme-wb-sm-wb-navcurr {
-	background: #3853a6;
-	color: #fff;
-}
-
-#wb-sm {
-	background: #202a33;
-
-	ul {
-		&.menu {
-			margin-bottom: 0;
-
-			> {
-				li {
-					border-right: 1px solid #999;
-					padding: 0;
-
-					> {
-						a {
-							&.wb-navcurr {
-								@extend %ogpl-theme-wb-sm-wb-navcurr;
-							}
-
-							// :focus not needed since already covered by the &.active state
-							&:hover {
-								@extend %submenu-colors;
-							}
-						}
-					}
-
-					&:last-child {
-						border-left: 1px solid #999;
-					}
-
-					&.active {
-						border-color: #ccc;
-					}
-				}
-			}
-		}
-	}
-
-	.active {
-		a,
-		summary {
-			@extend %submenu-colors;
-		}
-	}
-
-	a,
-	summary {
-		color: #fff;
-		display: block;
-		font-weight: 700;
-		padding: 0.48em 0.79em;
-		text-decoration: none;
-	}
-
-	.sm {
-		@extend %submenu-colors;
-		border-bottom: 4px solid #0f315b;
-		border-radius: 0 0 3px 3px;
-
-		a,
-		summary {
-			@extend %medium-view-navigation-links;
-			@extend %submenu-colors;
-			font-weight: 400;
-
-			&.wb-navcurr {
-				@extend %ogpl-theme-wb-sm-wb-navcurr;
-			}
-		}
-
-		.slflnk {
-			a {
-				background: #bbb;
-			}
 		}
 	}
 }
